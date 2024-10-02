@@ -35,10 +35,18 @@ public class Main {
 
         Book book1 = new Book("Возвышение Хоруса", author1, 2006);
         Book book2 = new Book("Лживые боги", author2, 2007);
+        Book book3 = new Book("Лживые боги", author2, 2007);
 
-        book1.setYear(2008);
         System.out.println("book1.getYear() = " + book1.getYear());
+        book1.setYear(2008);
+        System.out.println("Изменили год первой книги методом set на 2008");
+        System.out.println("book1.getYear() = " + book1.getYear());
+        System.out.println();
 
-
+        System.out.println("author2.toString() = " + author2.toString());
+        System.out.println("Добавили одинаковую книгу и сравнили с существующей");
+        System.out.println("book2.toString() = " + book2.toString());
+        System.out.println("book3.toString() = " + book3.toString());
+        System.out.println("book3.equals(book2) = " + book3.equals(book2));
     }
 }
